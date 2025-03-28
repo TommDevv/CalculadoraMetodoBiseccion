@@ -39,8 +39,8 @@ entrada = input("Ingresa una función matemática en términos de x (ej: x**2 + 
 contexto = {"__builtins__": None, **math.__dict__}
 funcion = eval(f"lambda x: {entrada}", contexto)
 
-a = float(input("Ingresa el valor de a (inicio del intervalo): "))
-b = float(input("Ingresa el valor de b (fin del intervalo): "))
+a = float(input("Ingresa el valor de xi (limite inferior del intervalo): "))
+b = float(input("Ingresa el valor de xu (limite superior del intervalo): "))
 error_minimo = float(input("Ingresa el error mínimo requerido: "))
 
 
